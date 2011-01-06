@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Turkey - Post a Job</title>
+</head>
+<body onload="initialize()">
+
+  <style type="text/css">
+    /* Write your CSS here. */
+		body {
+		  margin: 0;
+		  padding: 0;
+		  padding-left: 20px;
+		  font-family: Helvetica;
+		}
+		#navigation {
+		  height: 1.7em;
+		  margin-top: 5px;
+		  border-bottom: 1px solid #888888;
+		  margin-bottom: 5px;
+		  font-weight: 900;
+
+		}
+		#navigation ul {
+		  padding: 0;
+		  margin: 0;
+			padding-left: 0;
+		}
+		#navigation li {
+		  float: left;
+		  list-style: none;
+			background-color: white;
+		}
+		#navigation a {
+		  color: inherit;
+		  text-decoration: none;
+		  display: inline-block;
+		  padding: 0.2em 5px;
+		  height: 1.3em;  
+		}
+		#navigation a:hover {
+		  background-color: #00b0ff;
+		}
+		#navigation li ul {
+		  border: 1px solid #888888;
+		  border-top: 0px none;
+		}
+		#navigation li li {
+		  float: none;
+		  padding: 0;
+		  display: none;
+		}
+		#navigation li li a {
+		  width: 12em;
+		}
+		#navigation li:hover li {
+		  display: block;
+		}    
+		#header {
+			margin-top: 10px;
+			position: absolute;
+			margin-bottom: 50px;
+			}
+		#map_canvas {
+		position: absolute;
+		margin-top: 100px;
+		}
+
+ 			
+  }
+
+		}
+  </style>
+
+  <div id="navigation">   
+    <ul>
+      <li>
+        <a href="index.html">Home</a>
+        
+      </li>
+      <li>
+        <a href="post.html">Post a Job</a>
+      </li>
+      <li>
+        <a href="map.html">Look for Jobs</a>
+      </li>
+      <li>
+        <a href="#">My Account</a>
+        <ul>
+          <li>
+            <a href="help.html">Help</a>
+          </li>
+          <li>
+            <a href="account.html">Account Settings</a>
+          </li>
+     
+        </ul>
+      </li>
+    </ul>
+  </div>
+   <div id="header">
+  <h1>the JOB map</h1>
+  </div>
+  
+  <div id="map_canvas" style="width:50%; height:50%">
+   marker.setMap(map);</div>
+   
+
+</body>
+</html>
