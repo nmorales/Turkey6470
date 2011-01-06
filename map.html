@@ -8,7 +8,7 @@
   body { height: 100%; margin: 0px; padding: 0px }
   #map_canvas { height: 100% }
 </style>
-<title>Turkey: Look for a Job</title>
+<title>Turkey - Look for a Job</title>
 
 
 
@@ -25,7 +25,7 @@ var infowindow = new google.maps.InfoWindow();
 
 function initialize() {
   var myOptions = {
-    zoom: 8,
+    zoom: 12,
     mapTypeId: google.maps.MapTypeId.ROADMAP
   };
   map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
@@ -147,8 +147,9 @@ function handleNoGeolocation(errorFlag) {
 			margin-bottom: 50px;
 			}
 		#map_canvas {
-		position: absolute;
-		margin-top: 100px;
+			position: absolute;
+			margin-top: 100px;
+			margin-left: 20px	
 		}
 
  			
@@ -188,7 +189,7 @@ function handleNoGeolocation(errorFlag) {
   <h1>the JOB map</h1>
   </div>
   
-  <div id="map_canvas" style="width:50%; height:50%"></div>
+  <span id="map_canvas" style="width:75%; height:50%"></span>
    
 
 </body>
